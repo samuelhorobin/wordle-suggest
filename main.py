@@ -21,7 +21,7 @@ while len(input_words) < MAX_WORDS - 1:
     else:
         input_words.append(user_input)
 
-print(f"\nYou entered the following words: {", ".join(input_words)}")
+print(f"\nYou entered the following words: {', '.join(input_words)}")
 
 valid_words = []
 
@@ -35,7 +35,7 @@ for wordle_word in wordle_words:
         valid_words.append(wordle_word)
 
 if len(valid_words) != 0:
-    print(valid_words)
+    print(sorted(valid_words))
 else:
     print("No valid words")
 
